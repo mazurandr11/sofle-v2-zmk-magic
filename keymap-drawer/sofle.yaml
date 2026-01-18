@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
-    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
+  default: [ESCAPE, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, '{', LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;, '''',
+    LCTRL, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, '}', LGUI, LALT, adjust, '`', SPACE, BACKSPACE, RET, RCTRL, RALT, RGUI]
   lower:
   - '&studio_unlock'
   - F1
@@ -15,7 +15,7 @@ layers:
   - F9
   - F10
   - F11
-  - '`'
+  - CAPSLOCK
   - '1'
   - '2'
   - '3'
@@ -56,7 +56,7 @@ layers:
   - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -76,16 +76,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR ALL
   - INS
   - PSCRN
   - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
-  - {t: ▽, type: trans}
+  - HOME
   - UP
-  - {t: ▽, type: trans}
+  - END
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -120,7 +120,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -130,23 +130,23 @@ layers:
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - '&bootloader'
+  - CLEAR
+  - KP DIVIDE
+  - KP MULTIPLY
+  - '-'
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&bootloader'
   - EP TOG
   - RGB HUD
   - RGB HUI
   - RGB SAD
   - RGB SAI
   - RGB EFF
-  - ''
-  - ''
-  - ''
-  - ''
+  - '7'
+  - '8'
+  - '9'
+  - +
   - ''
   - ''
   - ''
@@ -155,10 +155,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '4'
+  - '5'
+  - '6'
+  - BACKSPACE
   - ''
   - ''
   - ''
@@ -169,19 +169,19 @@ layers:
   - ''
   - RGB TOG
   - ''
+  - '1'
+  - '2'
+  - '3'
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
+  - CALC
   - ''
   - ''
   - {type: held}
   - ''
   - ''
   - ''
+  - ''
+  - '0'
+  - .
+  - ','
